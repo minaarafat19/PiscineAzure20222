@@ -1,0 +1,28 @@
+{
+  "name": "kasapio.",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2zrhun/kasapio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/2zrhun/kasapio/issues"
+  },
+  "homepage": "https://github.com/2zrhun/kasapio#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express.js": "^1.0.0",
+    "fetch": "^1.1.0",
+    "firebase": "^9.6.10",
+    "nodemon": "^2.0.15",
+    "parse": "^3.4.1"
+  }
+}
