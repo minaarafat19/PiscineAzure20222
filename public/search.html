@@ -10,6 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&family=Work+Sans:wght@100&family=Yantramanav:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/chatBot.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src='https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js'></script>
+    <script src="https://unpkg.com/ml5@0.1.1/dist/ml5.min.js"></script>
+    
     <!-- <link rel="stylesheet" href="css/products.css"> -->
     <script src="js/home.js"></script>
 </head>
@@ -47,6 +54,8 @@
     <!--product preview-->
     <section class="search-listing">
         <h1 class="section-title">researched products</h1>
+        <button id="button" class="#start-btn">StartBoT</button>
+
         <div class="product-container">
             <div class="product-card">
                 <img src="img/myimage.png" class="product-img" alt="">
@@ -83,5 +92,48 @@
         </div>
         
     </section>
+    <section>
+        <button class="chat-btn"> 
+            <i class="material-icons"> comment </i>
+        </button>
+
+        <div class="chat-popup">
+            <div class="badge">1</div>
+            <div class="chat-area">
+             <div class="income-msg">
+                
+                 <img src="img/person.jpg" class="avatar" alt="">
+                 <div class="msg"> <ul id="list-text" class="list-text-group"></ul>Hi, How can I help you?</div>
+                 
+             </div>   
+            </div>
+
+            <div class="input-area">
+                <input type="text">
+                
+                <button id="emoji-btn"> &#127773;</button>
+                 <div class="input-group mb-3"><div class="input-group">
+                            <input type="file" class="form-control" id="read-file" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                            <button class="btn btn-outline-secondary" type="button" id="send-btn">Send</button>
+                            <h3 id="lire">testing, reading</h3>
+                            <ul id="list-text" class="list-text-group"></ul>
+                            <div class="input-group mb-3">
+                                <input type="file" class="form-control" id="read-file2" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                            <button class="btn btn-outline-secondary" type="button" id="send-btn2">ImageRegn</button>
+                            <div class="input-group">
+                            
+                           
+                            
+                </div>
+                            
+                 </div>
+                        <button class="submit"> <i class="material-icons"> send</i></button>
+                
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.1.1/dist/index.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/Assitance.js"></script>
 </body>
 </html>
