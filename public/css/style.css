@@ -7,6 +7,9 @@ body{
     font-family:'Work Sans', serif;
     background: rgba(160, 158, 158, 0.605);
 }
+span{
+    font-size: 24px;
+}
 .navbar{
     width: 100%;
     height: 80px;
@@ -18,6 +21,23 @@ body{
     z-index: 9;
     transition: 0.5s;
 }
+.user{
+    display: flex;
+    position: absolute;
+    right: -10rem;
+    top:20%;
+    transform: translateY(-50%);
+}
+.start-btn{
+    text-align: center;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    
+}
+.start-btn span{
+    color: aliceblue;
+} 
 .navbar.bg{
     background: whitesmoke;
 }
@@ -46,11 +66,12 @@ body{
 }
 .user-cart{
     display: flex;
-    position: absolute;
+    position: relative;
     right: 5vw;
     top:50%;
     transform: translateY(-50%);
 }
+
 .cart, .user{
     width: 30px;
     height: 30px;

@@ -26,6 +26,9 @@ const createNavbar = () => {
             <li class="link-item">
                 <a href="products.html" class="link">Obstacles</a>
             </li>
+            <div class="user">
+            <button id="button" class="start-btn"> <i class="material-icons" style="font-size:36px;">mic</i><br> <span>StartBot</Span></button>
+            </div>     
             
     `
 }

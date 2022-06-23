@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/chatBot.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src='https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js'></script>
     <script src="https://unpkg.com/ml5@0.1.1/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     <!-- <link rel="stylesheet" href="css/products.css"> -->
     <script src="js/home.js"></script>
@@ -26,68 +26,59 @@
         <!--logo-->
         <ul class="links-container">
             <li class="link-item">
-                <a href="#" class="link active">home</a>
+                <a href="index.html" class="link active">Welcome</a>
             </li>
             <li class="link-item">
-                <a href="#" class="link">about</a>
+                <a href="seller.html" class="link">How?</a>
             </li>
             <li class="link-item">
-                <a href="#" class="link">shop</a>
+                <a href="search.html" class="link">WittyBot</a>
             </li>
             <li class="link-item">
-                <a href="#" class="link">Manifest</a>
+                <a href="products.html" class="link">Obstacles</a>
             </li>
-            <li class="link-item">
-                <a href="#" class="link">Contact</a>
-            </li>
-        </ul>
-        <div class="user-cart">
-            <div class="cart">
-                <img src="img/cart.png" alt="" class="cart-icon">
-                <span class="cart-item-count">00</span>
-            </div>
-            <div class="user">
-                <img src="img/user.png" alt="" class="user-icon">
-            </div>
-        </div>
+        <ul>
+        <div class="user">
+            <button id="button" class="start-btn"> <i class="material-icons" style="font-size:36px;">mic</i>StartBot</button>
+         </div>
     </nav>
     <!--product preview-->
     <section class="search-listing">
         <h1 class="section-title">researched products</h1>
-        <button id="button" class="#start-btn">StartBoT</button>
-
+        <!-- <button id="button" class="#start-btn">StartBoT</button> -->
+        
         <div class="product-container">
             <div class="product-card">
                 <img src="img/myimage.png" class="product-img" alt="">
                 <img src="img/myimage1.png" alt="card Back" class="product-img-top">
-                <p class="product-price">xxx €</p>
+                <!-- <p class="product-price">xxx €</p> -->
             </div>
             <!-- <button class="product-btn buy-btn">buy now</button> -->
             <!-- <button class="product-btn cart-btn">add to cart</button> -->
             <div class="product-card">
-                <img src="img/myimage3.png" class="product-img" alt="card Front">
+                <!-- <img src="img/myimage3.png" class="product-img" alt="card Front"> -->
                 <img src="img/myimage4.png" alt="card Back" class="product-img-top">
-                <p class="product-price">xxx €</p>
+                <!-- <p class="product-price">xxx €</p> -->
+            </div>
+            <div class="product-card">
+                <!-- <img src="img/myimage4.png" class="product-img" alt=""> -->
+                <img src="img/myimage2.png" alt="card Back" class="product-img-top">
+                <!-- <p class="product-price">xxx €</p> -->
+            </div>
+            <div class="product-card">
+                <!-- <img src="img/myimage4.png" class="product-img" alt=""> -->
+                <img src="img/myimage2.png" alt="card Back" class="product-img-top">
+                <!-- <p class="product-price">xxx €</p> -->
             </div>
             <div class="product-card">
                 <img src="img/myimage4.png" class="product-img" alt="">
                 <img src="img/myimage2.png" alt="card Back" class="product-img-top">
-                <p class="product-price">xxx €</p>
+                <!-- <p class="product-price">xxx €</p> -->
             </div>
             <div class="product-card">
                 <img src="img/myimage4.png" class="product-img" alt="">
                 <img src="img/myimage2.png" alt="card Back" class="product-img-top">
-                <p class="product-price">xxx €</p>
-            </div>
-            <div class="product-card">
-                <img src="img/myimage4.png" class="product-img" alt="">
-                <img src="img/myimage2.png" alt="card Back" class="product-img-top">
-                <p class="product-price">xxx €</p>
-            </div>
-            <div class="product-card">
-                <img src="img/myimage4.png" class="product-img" alt="">
-                <img src="img/myimage2.png" alt="card Back" class="product-img-top">
-                <p class="product-price">xxx €</p>
+                <!-- <p class="product-price">xxx €</p> -->
             </div>
         </div>
         
@@ -96,44 +87,42 @@
         <button class="chat-btn"> 
             <i class="material-icons"> comment </i>
         </button>
-
+        
         <div class="chat-popup">
-            <div class="badge">1</div>
+            <div class="badge">x </div>
             <div class="chat-area">
-             <div class="income-msg">
-                
+                <div class="income-msg">
+                    
                  <img src="img/person.jpg" class="avatar" alt="">
                  <div class="msg"> <ul id="list-text" class="list-text-group"></ul>Hi, How can I help you?</div>
                  
-             </div>   
+                </div>   
             </div>
-
+            
             <div class="input-area">
                 <input type="text">
-                
                 <button id="emoji-btn"> &#127773;</button>
-                 <div class="input-group mb-3"><div class="input-group">
-                            <input type="file" class="form-control" id="read-file" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-                            <button class="btn btn-outline-secondary" type="button" id="send-btn">Send</button>
-                            <h3 id="lire">testing, reading</h3>
-                            <ul id="list-text" class="list-text-group"></ul>
-                            <div class="input-group mb-3">
-                                <input type="file" class="form-control" id="read-file2" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-                            <button class="btn btn-outline-secondary" type="button" id="send-btn2">ImageRegn</button>
-                            <div class="input-group">
-                            
-                           
-                            
-                </div>
-                            
-                 </div>
-                        <button class="submit"> <i class="material-icons"> send</i></button>
+                <div class="input-group mb-3"><div class="input-group">
+                    <button class="submit"> <i class="material-icons"> send</i></button>
+                    <input type="file" class="form-control" id="read-file" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                    <!-- <button class="btn btn-outline-secondary" type="button" id="send-btn">Send</button> -->
+                    <!-- <h3 id="lire">testing, reading</h3> -->
+                    <ul id="list-text" class="list-text-group"></ul>
+                    <!-- <div class="input-group mb-3">
+                        <input type="file" class="form-control" id="read-file2" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                        <button class="btn btn-outline-secondary" type="button" id="send-btn2">ImageRegn</button>
+                        <div class="input-group">
                 
+                        </div>
+
+                    </div> -->
+                    
+                </div>
             </div>
-        </div>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.1.1/dist/index.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/Assitance.js"></script>
-</body>
+        </section>
+        <script src="js/nav.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@joeattardi/emoji-button@3.1.1/dist/index.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/Assitance.js"></script>
+    </body>
 </html>
